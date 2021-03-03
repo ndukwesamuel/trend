@@ -1,0 +1,1 @@
+web: gunicorn TRENDA.wsgi --log-file -
