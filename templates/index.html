@@ -1,161 +1,347 @@
-urlpatterns = [
+{%  load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
 
-	#Leave as empty string for base url
-	path('', views.home, name="home"),
-	path('store/', views.store, name="store"),
-	path('cart/',views.cart, name='cart'),
-	path('cart2/', views.cart2, name="cart2"),
-	path('checkout/', views.checkout, name="checkout"),
-
-	path('update_item/', views.updateItem, name="update_item"),
-	path('process_order/', views.processOrder, name="process_order"),
-
-	# path('reg/', views.reg, name="reg"),
-	# path('log_page/', views.log_page, name="log_page"),
-	# path('logoutUser/', views.logoutUser, name="logoutUser"),
-	path('product/', views.product, name="product"),
+<body>
 
 
+    <header class="header-area header-sticky">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">Trenda</a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#pricing">Pricing</a></li>
+                            <li class="scroll-to-section"><a href="#service">Services</a></li>
+
+                            <!-- <li class="submenu">
+                                <a href="javascript:;">Drop Down</a>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Features</a></li>
+                                    <li><a href="">FAQ's</a></li>
+                                    <li><a href="">Blog</a></li>
+                                </ul>
+                            </li> -->
+                            <li class="scroll-to-section"><a href="">Contact</a></li>
+                            <li class="scroll-to-section"><a href="">Login</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<!--   navigation -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container ">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <div class="header_1">
+                          <h1 >Activate your product with <strong><a href="">TRENDA</a></strong></h1>
+                          <p class="header_p">
+                            We enable businesses achieve explosive growth and 
+                            standout from the crowd
+                          </p>
+                        <a href="#about" class="main-button-slider">Find Out More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                        <div class="header_text_img">
+                          <img src="{%static 'images/slider-icon.png'%}"  class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
 
 
-]urlpatterns = [
-
-#Leave as empty string for base url
-path('', views.home, name="home"),
-path('store/', views.store, name="store"),
-path('cart/',views.cart, name='cart'),
-path('cart2/', views.cart2, name="cart2"),
-path('checkout/', views.checkout, name="checkout"),
-
-path('update_item/', views.updateItem, name="update_item"),
-path('process_order/', views.processOrder, name="process_order"),
-
-# path('reg/', views.reg, name="reg"),
-# path('log_page/', views.log_page, name="log_page"),
-# path('logoutUser/', views.logoutUser, name="logoutUser"),
-path('product/', views.product, name="product"),
-
-
-
-
-]urlpatterns = [
-
-#Leave as empty string for base url
-path('', views.home, name="home"),
-path('store/', views.store, name="store"),
-path('cart/',views.cart, name='cart'),
-path('cart2/', views.cart2, name="cart2"),
-path('checkout/', views.checkout, name="checkout"),
-
-path('update_item/', views.updateItem, name="update_item"),
-path('process_order/', views.processOrder, name="process_order"),
-
-# path('reg/', views.reg, name="reg"),
-# path('log_page/', views.log_page, name="log_page"),
-# path('logoutUser/', views.logoutUser, name="logoutUser"),
-path('product/', views.product, name="product"),
-
-
-
-
-]urlpatterns = [
-
-#Leave as empty string for base url
-path('', views.home, name="home"),
-path('store/', views.store, name="store"),
-path('cart/',views.cart, name='cart'),
-path('cart2/', views.cart2, name="cart2"),
-path('checkout/', views.checkout, name="checkout"),
-
-path('update_item/', views.updateItem, name="update_item"),
-path('process_order/', views.processOrder, name="process_order"),
-
-# path('reg/', views.reg, name="reg"),
-# path('log_page/', views.log_page, name="log_page"),
-# path('logoutUser/', views.logoutUser, name="logoutUser"),
-path('product/', views.product, name="product"),
-
-
-
-
-]urlpatterns = [
-
-#Leave as empty string for base url
-path('', views.home, name="home"),
-path('store/', views.store, name="store"),
-path('cart/',views.cart, name='cart'),
-path('cart2/', views.cart2, name="cart2"),
-path('checkout/', views.checkout, name="checkout"),
-
-path('update_item/', views.updateItem, name="update_item"),
-path('process_order/', views.processOrder, name="process_order"),
-
-# path('reg/', views.reg, name="reg"),
-# path('log_page/', views.log_page, name="log_page"),
-# path('logoutUser/', views.logoutUser, name="logoutUser"),
-path('product/', views.product, name="product"),
+<!-- home section end here -->
 
 
 
 
-]urlpatterns = [
 
-#Leave as empty string for base url
-path('', views.home, name="home"),
-path('store/', views.store, name="store"),
-path('cart/',views.cart, name='cart'),
-path('cart2/', views.cart2, name="cart2"),
-path('checkout/', views.checkout, name="checkout"),
+<!-- service section beging here -->
 
-path('update_item/', views.updateItem, name="update_item"),
-path('process_order/', views.processOrder, name="process_order"),
+<section class="services" id="service">
+  <!-- <div class="container">
+     -->
+    <div class="row">
+  
+      <div class="col-sm-6">
+        <img class="services_img_1" src=" {%static 'images/left-image.png'%} " width="500" ></div>
+      <div class="col-sm-6">
+        <div class=" service_1">
+            <div class="row">
+              <div class="col-sm-2"><img src="{%static 'images/features-icon-2.png'%}"></div>
+              <div class="col-sm-10">
+                <h1>Content Strategy Development</h1>
+                <p>
+                `
+              </div>
+            </div>
+        </div>
 
-# path('reg/', views.reg, name="reg"),
-# path('log_page/', views.log_page, name="log_page"),
-# path('logoutUser/', views.logoutUser, name="logoutUser"),
-path('product/', views.product, name="product"),
+        <div class=" service_1">
+            <div class="row">
+              <div class="col-sm-2"><img src="{%static 'images/features-icon-2.png'%}"></div>
+              <div class="col-sm-10">
+                <h1>Content Strategy Development</h1>
+                <p>Please do not redistribute this template ZIP file for a download purpose. You may contact us for additional licensing of our template or to get a PSD file.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class=" service_1">
+            <div class="row">
+              <div class="col-sm-2"><img src=" {%static 'images/features-icon-2.png'%}"></div>
+              <div class="col-sm-10">
+                <h1>Social Media and Blog Management</h1>
+                <p>Please do not redistribute this template ZIP file for a download purpose. You may contact us for additional licensing of our template or to get a PSD file.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class=" service_1">
+            <div class="row">
+              <div class="col-sm-2"><img src="{%static 'images/features-icon-2.png'%}"></div>
+              <div class="col-sm-10">
+                <h1>Content Writing Services</h1>
+                <p>Please do not redistribute this template ZIP file for a download purpose. You may contact us for additional licensing of our template or to get a PSD file.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+<!--     
+  </div> -->
+
+</section>
+
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div>
+              <h1>
+                Our pricings are very flexible and depend on your sector and complexity of task.
+              </h1>
+              <p> For that to happen, we need to know you and your product. That also enables us to give you the best results. Speak to our team to get started.  </p> 
+        </div>
+      
+       </div>
+      <div class="col-sm-6">
+
+        
+          <iframe width="520" height="315"
+                src="https://www.youtube.com/watch?v=sO4te2QNsHY">
+          </iframe>
+      </div>
+      
+    </div>
+    <div class="pricing_link">
+     <a href="https://calendly.com/d/gg3x-qm4m/book-a-time" class="btn btn-primary "> 
+      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="26" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 26 16">
+        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+      </svg>
+      Book a Strategy Call</a> </div>
+    
+  </div>
+
+  
+</section>
+
+
+
+<section class="brands">
+
+
+  <div class="container">
+
+        <div class="brands_1">
+             <h1>
+          Brands we have worked with
+
+            </h1>
+
+            <div class="">
+
+                <img src="{%static 'images/slider-icon.png'%}" width="200">
+                <img src="{%static 'images/slider-icon.png'%}" width="200">
+                 <img src="{%static 'images/slider-icon.png'%}" width="200">
+            </div>
+        </div>
+
+
+     
+
+
+
+  </div>
+  
+</section>
+
+
+<section class="" id="contact">
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        
+        <div class="contact_Sec_1">        
+          <h1>  Get in touch </h1>
+          <p>   Complete the form below and we will respond within 24 hours.</p>
+        </div>
+
+      </div>
+      <div class="col-sm-7">
+
+        <form action="" method="POST">
+          {% csrf_token %}
+
+          {{ form.as_p}}
+
+          <input class="btn btn-primary con_btn" type="submit" value=" submit">
 
 
 
 
-]urlpatterns = [
+        </form>
+  
 
-	#Leave as empty string for base url
-	path('', views.home, name="home"),
-	path('store/', views.store, name="store"),
-	path('cart/',views.cart, name='cart'),
-	path('cart2/', views.cart2, name="cart2"),
-	path('checkout/', views.checkout, name="checkout"),
 
-	path('update_item/', views.updateItem, name="update_item"),
-	path('process_order/', views.processOrder, name="process_order"),
+      </div>
 
-	# path('reg/', views.reg, name="reg"),
-	# path('log_page/', views.log_page, name="log_page"),
-	# path('logoutUser/', views.logoutUser, name="logoutUser"),
-	path('product/', views.product, name="product"),
+    </div>
+
+  </div>
+
+
+</section>
 
 
 
+<footer>
 
-]urlpatterns = [
+  <div class="container">
 
-#Leave as empty string for base url
-path('', views.home, name="home"),
-path('store/', views.store, name="store"),
-path('cart/',views.cart, name='cart'),
-path('cart2/', views.cart2, name="cart2"),
-path('checkout/', views.checkout, name="checkout"),
+    <div class="row">
+      <div class="col-sm-3">
+        <h2>USEFUL LINKS</h2>
+          <p>About</p>
+          <p>
+            Content Writing Services</p>
+          <p>
+            Blog Writing Services</p>
+          <p>Blog</p>
+          <p>Contact</p>
 
-path('update_item/', views.updateItem, name="update_item"),
-path('process_order/', views.processOrder, name="process_order"),
-
-# path('reg/', views.reg, name="reg"),
-# path('log_page/', views.log_page, name="log_page"),
-# path('logoutUser/', views.logoutUser, name="logoutUser"),
-path('product/', views.product, name="product"),
-
+      </div>
 
 
+      <div class="col-sm-3">
+        <h2>IMPORTANT</h2>
+          <p>Careers</p>
+          <p>
+            Client Login</p>
+          <p>
+            Terms of Service</p>
+          <p>Refund Policy</p>
+          <p>Privacy Policy</p>
 
-]
+      </div>
+
+
+      <div class="col-sm-3">
+        <h2>CONTACT</h2>
+          <p>Bluedot House, La Grande Rue, St Saviours, GY7 9PR, Guernsey</p>
+
+          <p>info@contentellect.com</p>
+
+
+
+      </div>
+
+
+      <div class="col-sm-3">
+        <h2>SOCIAL</h2>
+       
+        <a href="https://twitter.com/intent/tweet?screen_name=KitovuHQ&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @KitovuHQ</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        
+
+          
+
+
+      </div>
+      <div class="col-sm-3"></div>
+
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      
+    </div>
+    
+  </div>
+
+ 
+ 
+
+</footer>
+
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="assets/js/jquery-2.1.0.min.js"></script> -->
+
+    <!-- Bootstrap -->
+
+    <script src="{% static 'js/jquery-2.1.0.min.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+   <!-- Plugins -->
+
+    <script src="{% static 'js/owl-carousel.js' %}"></script>   
+    <script src="{% static 'js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'js/scrollreveal.min.js' %}"></script>
+
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+
+    <script src="{% static 'js/imgfix.min.js' %}"></script>
+    <!-- Global Init -->
+    <script src="{% static 'js/custom.js' %}"></script>
+
+
+</body>
+</html>

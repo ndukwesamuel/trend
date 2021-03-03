@@ -1,0 +1,94 @@
+.header_1{
+
+	margin-top: 4em;
+
+}
+
+.header_text_img{
+	margin-top: 10em;
+
+}
+
+
+.service_1{
+	margin-bottom: 2em;
+}
+
+
+ .services_img_1{
+
+	padding-top: 7em;
+
+
+}
+
+.home div div div p a{
+	color: yellow;
+	font-size: 26px;
+	font-weight: bolder;
+	border-radius: 12px;
+}
+
+.sec_1{
+	font-size: 40px;
+	margin-top: 4em;}
+
+
+
+.services{
+	padding-top: 2em;
+}
+.pricing{
+	padding-top: 3em;
+	background: #33AFFF;
+
+}
+
+
+.pricing_link{
+	text-align: center;
+	padding-bottom: 2em;
+}
+
+
+.brands_1{
+	text-align: center;
+	padding-top: 3em;
+	padding-bottom: 4em;
+	
+}
+
+.contact_Sec_1{
+
+	margin-top: 10em;
+}
+
+.contact_Sec_1 h1{
+
+	font-size: 4em;
+}
+
+.contact_Sec_1 p{
+
+	font-size: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-weight: lighter;
+	margin-top: 10px;
+}
+
+
+.con_btn{
+
+	color: lawngreen;
+	margin-bottom: 2em;
+	margin-top: 2em;
+
+}
+
+
+footer{
+
+	background: #33AFFF;
+	padding-top: 2em;
+}
