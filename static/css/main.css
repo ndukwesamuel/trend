@@ -10,6 +10,16 @@
 }
 
 
+.hearder_img {
+		border: solid red 2px;
+		border-top-left-radius: 10em;
+
+
+}
+
+
+
+
 .service_1{
 	margin-bottom: 2em;
 }
@@ -18,6 +28,19 @@
  .services_img_1{
 
 	padding-top: 7em;
+	
+
+	border-bottom-left-radius: 5em;
+	border-bottom-right-radius: 30em;
+	border-top-right-radius: 20em;
+	border-top-left-radius: 10em;
+
+	
+
+	width: 40em;
+	height: 40em;
+
+	
 
 
 }
